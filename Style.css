@@ -90,24 +90,24 @@ body {
   display: flex;
   list-style: none;
   margin-left: 3rem;
-  z-index:2;
+  z-index: 2;
 }
 .nav-links li {
   margin: 10px;
 }
 .ProductDesc i {
-  position:absolute;
-  right:.5rem;
-  transition:all 0.3s;
+  position: absolute;
+  right: 0.5rem;
+  transition: all 0.3s;
 }
-.ProductDesc i:hover{
-  color:#818dff;
-  cursor:pointer;
+.ProductDesc i:hover {
+  color: #818dff;
+  cursor: pointer;
 }
-.activeHeart{
-  opacity:0;
+.activeHeart {
+  opacity: 0;
   pointer-events: none;
-  color:#818dff;
+  color: #818dff;
 }
 .Burger {
   display: none;
@@ -987,10 +987,12 @@ footer {
     right: -1rem;
   }
   .select-box .options-container {
-    top: 18rem;
+    top: 15rem;
+    width: 54%;
   }
   .select-box2 .options-container2 {
-    top: 23rem;
+    top: 20rem;
+    width: 54%;
   }
   .cart {
     width: 60%;
@@ -1028,7 +1030,7 @@ footer {
     width: 8%;
   }
   .ProductDesc i {
-    right:1.5rem;
-    font-size:1.5rem;
+    right: 1.5rem;
+    font-size: 1.5rem;
   }
 }
