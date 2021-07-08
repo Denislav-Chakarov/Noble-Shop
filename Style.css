@@ -1,0 +1,1016 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  overflow-x: hidden;
+}
+.overflow {
+  overflow-x: hidden;
+}
+.top-bar {
+  background-color: black;
+}
+.FreeShopping {
+  display: flex;
+  color: white;
+}
+.FreeShopping p {
+  margin: auto;
+}
+.SideList {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  margin: auto;
+  width: 50%;
+}
+.SideList li {
+  margin: 10px;
+  padding: 0 10px 0 10px;
+}
+.SideList li a,
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s;
+}
+.SideList li a::after,
+.nav-links li a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 1px;
+  background: #d363ff;
+  transition: width 0.3s;
+}
+.SideList li a:hover::after {
+  width: 100%;
+}
+.SideList li a:hover {
+  color: #818dff;
+}
+.nav-links li a {
+  text-decoration: none;
+  color: black;
+}
+.nav-links li a:hover::after {
+  width: 100%;
+}
+.nav-links li a:hover {
+  color: #818dff;
+}
+.nav-bar {
+  width: 100%;
+  display: flex;
+  padding-top: 1rem;
+  z-index: 2;
+  background-color: #e5e2e2;
+  position: relative;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  background-color: white;
+  box-shadow: 0 0 3px 3px #dcdde1;
+}
+.navAbsolute {
+  position: absolute;
+}
+.logo {
+  margin-top: 10px;
+  z-index: 2;
+}
+.logo h5 {
+  margin-left: 13rem;
+}
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin-left: 3rem;
+}
+.nav-links li {
+  margin: 10px;
+}
+.Burger {
+  display: none;
+}
+.Icons {
+  display: flex;
+  justify-content: flex-end;
+  width: 90%;
+  position: absolute;
+}
+.Icons i {
+  margin: 15px;
+  font-size: 1.2rem;
+  transition: all 0.3s;
+}
+.Icons a {
+  text-decoration: none;
+  color: black;
+}
+.Icons i:hover {
+  color: #818dff;
+  cursor: pointer;
+}
+.swiper-container {
+  width: 100%;
+  height: 625px;
+  background-color: #e5e2e2;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  color: black !important;
+}
+.ModelImg1 {
+  width: 50%;
+  position: absolute;
+  left: 30%;
+  right: 30%;
+}
+.ModelImg2 {
+  width: 60%;
+  position: absolute;
+  left: 37%;
+  right: 37%;
+  height: 100%;
+}
+.ModelImg3 {
+  width: 60%;
+  position: absolute;
+  left: 40%;
+  right: 40%;
+  height: 100%;
+}
+.Burger {
+  cursor: pointer;
+  z-index: 2;
+}
+.Burger > div {
+  margin: 10px;
+  transition: all 0.3s;
+}
+.line1 {
+  width: 2rem;
+  height: 2px;
+  background-color: #000000;
+}
+.line2 {
+  width: 2rem;
+  height: 2px;
+  background-color: #000000;
+}
+.line3 {
+  width: 1.5rem;
+  height: 2px;
+  background-color: #000000;
+}
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+.Collection {
+  position: absolute;
+  left: 10%;
+  right: 10%;
+  top: 20%;
+  bottom: 20%;
+}
+.Collection .MWCollection {
+  font-size: 1.5rem;
+}
+.Collection .Season {
+  font-size: 3rem;
+}
+.Collection button {
+  background-color: #818dff;
+  border: none;
+  padding: 10px 20px 10px 20px;
+  border-radius: 12px;
+}
+.ColImg {
+  border: 1px solid rgb(196, 196, 196);
+  position: relative;
+  margin-top: 2rem;
+  transition: all 0.3s;
+}
+.ColImg:hover {
+  background-color: #818dff;
+}
+.ColImg:hover .shopNow::after {
+  width: 100%;
+}
+.ColImg:hover .shopNow {
+  transform: scale(1);
+}
+.ColImg:hover .CatDescription {
+  color: white;
+}
+.shopNow {
+  position: absolute;
+  bottom: 15%;
+  left: 12%;
+  color: white;
+  transform: scale(0);
+  transition: all 0.7s;
+}
+.shopNow::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 1px;
+  background: white;
+  transition: width 0.7s;
+}
+
+.CatDescription {
+  position: absolute;
+  color: black;
+  padding: 2.5rem;
+  transition: all 0.7s;
+}
+.Products {
+  margin-top: 5rem;
+}
+.SortBtn {
+  background-color: white;
+  margin: 10px;
+  color: gray;
+  border: none;
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s;
+}
+*:focus:not(.focus-visible) {
+  outline: none;
+}
+.SortBtn:hover {
+  color: black;
+  border-bottom: 1px solid black;
+}
+.SortBtn-active {
+  color: black;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+.filter {
+  border: 1px solid #e5e2e2;
+  padding: 5px 20px 5px 20px;
+  transition: all 0.5s;
+}
+.filter i {
+  margin-top: 0.5rem;
+}
+.filter:hover {
+  background-color: #818dff;
+  cursor: pointer;
+  color: white;
+}
+.search {
+  border: 1px solid #e5e2e2;
+  padding: 5px 20px 5px 20px;
+  margin-left: 1rem;
+  transition: all 0.5s;
+  position: relative;
+}
+.search-active {
+  background-color: #e5e2e2;
+}
+.triangle {
+  display: none;
+  position: absolute;
+  top: 70%;
+  left: 40%;
+  clip-path: polygon(50% 50%, 100% 50%, 50% 100%, 0 50%);
+  background-color: #e5e2e2;
+  height: 25px;
+  width: 25px;
+  transition: all 0.5s;
+}
+.triangle-active {
+  display: block;
+}
+.triangle2 {
+  display: none;
+  position: absolute;
+  top: 70%;
+  left: 45%;
+  clip-path: polygon(50% 50%, 100% 50%, 50% 100%, 0 50%);
+  background-color: #e5e2e2;
+  height: 25px;
+  width: 25px;
+  transition: all 0.5s;
+}
+.triangle2-active {
+  display: block;
+}
+.filter:hover .triangle2 {
+  background-color: #818dff;
+}
+.search i {
+  margin-top: 0.5rem;
+}
+.search:hover {
+  background-color: #818dff;
+  cursor: pointer;
+  color: white;
+}
+.search:hover .triangle {
+  background-color: #818dff;
+}
+.Product {
+  margin-top: 4rem;
+}
+.ProductTop {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+.ProductImage {
+  transition: all 0.7s;
+}
+.ProductImage-active {
+  transform: scale(1.1);
+}
+.HoverImg {
+  color: black;
+  background-color: white;
+  border-radius: 12px;
+  position: absolute;
+  width: 40%;
+  text-align: center;
+  right: 35%;
+  left: 35%;
+  bottom: 25px;
+  transition: all 0.7s;
+  padding: 5px 10px 5px 10px;
+  transform: translateY(200%);
+  z-index: 1;
+}
+.HoverImg-active {
+  transform: translateY(0%);
+  background-color: white;
+  color: black;
+}
+.HoverImg:hover {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+}
+.Hot {
+  position: relative;
+}
+.Hot::after {
+  top: -1rem;
+  right: -1rem;
+  position: absolute;
+  font-size: 0.65rem;
+  color: white;
+  content: "HOT";
+  background-color: red;
+  padding: 0 5px 0 5px;
+  border-radius: 24px;
+}
+.LoadMore {
+  margin-top: 4rem;
+  padding-bottom: 3rem;
+  text-align: center;
+}
+.LoadMore button {
+  background-color: #e5e2e2;
+  color: black;
+  border: none;
+  border-radius: 2rem;
+  padding: 0.5rem 2.5rem 0.5rem 2.5rem;
+  transition: all 0.3s;
+}
+.LoadMore button:hover {
+  background-color: black;
+  color: white;
+}
+.SearchBar {
+  position: relative;
+  width: 100%;
+  border: 1px solid #e5e2e2;
+  height: 0;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.5s;
+}
+.SearchBarShow {
+  margin-top: 2rem;
+  padding: 20px;
+  height: initial;
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+}
+.SearchBar i {
+  margin-top: 4px;
+}
+.SearchBox {
+  border: none;
+  margin-left: 1rem;
+  width: 95%;
+}
+.FilterList {
+  margin-top: 2rem;
+  display: flex;
+  width: 100%;
+  max-height: 0;
+  overflow: hidden;
+  transition: 1s ease max-height, 1s ease background-color;
+}
+.FilterListShow {
+  max-height: 300px;
+  background-color: #e5e2e2;
+}
+.FilterList ul {
+  list-style: none;
+}
+.FilterList button {
+  border: none;
+  background: transparent;
+  color: #7e7d7d;
+  border: none;
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s;
+}
+.FilterList button:hover {
+  color: #818dff;
+  border-bottom: 1px solid #818dff;
+}
+.FilterContent {
+  padding: 20px;
+}
+.FilterContent h6 {
+  font-weight: bold;
+}
+.Tags button {
+  border: 1px solid #7e7d7d;
+  border-radius: 12px;
+  padding: 0 10px 0 10px;
+  margin: 2px;
+}
+.FilterList-active {
+  color: #818dff;
+  border: none;
+  border-bottom: 1px solid #818dff;
+}
+.slider {
+  padding: 3rem 0;
+  width: 100%;
+  height: 40rem;
+  background-color: #fff;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.5);
+  overflow-y: auto;
+}
+.image-holder {
+  height: 35rem;
+  margin-left: 8rem;
+}
+.image-holder img {
+  height: 35rem;
+}
+.glide {
+  width: 100%;
+}
+.glide__bullets {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 20%);
+}
+.glide__bullets button {
+  border: none;
+  background-color: transparent;
+}
+.glide_bullet {
+  width: 15rem;
+  height: 11rem;
+}
+.thumbnail {
+  width: 15rem;
+  height: 10rem;
+  border: none;
+}
+.thumbnail img {
+  width: 7rem;
+  height: 7rem;
+  object-fit: contain;
+}
+.BulletsWrapper {
+  position: absolute;
+  top: -6rem;
+  left: 4rem;
+}
+.glide__arrows .one {
+  position: absolute;
+  left: 8rem;
+  top: 45%;
+  border: none;
+  background-color: #7e7d7d;
+  color: white;
+  padding: 10px 15px 10px 15px;
+}
+.glide__arrows .two {
+  position: absolute;
+  right: 1.75rem;
+  top: 45%;
+  border: none;
+  background-color: #7e7d7d;
+  color: white;
+  padding: 10px 15px 10px 15px;
+}
+.ProductName h4 {
+  font-weight: bold;
+}
+.ProductPrize h5 {
+  font-weight: bold;
+}
+
+.select-box,
+.select-box2 {
+  display: flex;
+  max-width: 200px;
+  flex-direction: column;
+}
+
+.select-box .options-container,
+.select-box2 .options-container2 {
+  background: black;
+  color: white;
+  max-height: 0;
+  opacity: 0;
+  transition: all 0.4s;
+  border-radius: 8px;
+  overflow: hidden;
+  order: 1;
+  position: absolute;
+  z-index: 3;
+}
+.select-box .options-container {
+  top: 13.5rem;
+  width: 44%;
+}
+.select-box2 .options-container2 {
+  top: 18.5rem;
+  width: 44%;
+}
+
+.selected,
+.selected2 {
+  background: black;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  color: white;
+  position: relative;
+
+  order: 0;
+}
+
+.selected::after,
+.selected2::after {
+  content: "";
+  background: url("imgsModel/angle-arrow-down2.png");
+  background-size: contain;
+
+  background-repeat: no-repeat;
+
+  position: absolute;
+  height: 100%;
+  width: 20px;
+  right: 20px;
+  top: 12px;
+
+  transition: all 0.4s;
+}
+
+.select-box .options-container.active,
+.select-box2 .options-container2.active {
+  max-height: 240px;
+  opacity: 1;
+}
+
+.select-box .options-container.active + .selected::after,
+.select-box2 .options-container2.active + .selected2::after {
+  transform: rotateX(180deg);
+  top: -12px;
+}
+.select-box .option,
+.selected,
+.select-box2 .option2,
+.selected2 {
+  padding: 8px 20px;
+  cursor: pointer;
+}
+.select-box .option:hover,
+.select-box2 .option2:hover {
+  background: #7e7d7d;
+}
+.select-box label,
+.select-box2 label {
+  cursor: pointer;
+}
+.select-box .option .radio,
+.select-box2 .option2 .radio {
+  display: none;
+}
+.IncreaseDecrease {
+  border: 1px solid #bebdbd;
+  max-width: 8rem;
+  position: relative;
+  margin-left: 2rem;
+}
+.IncreaseDecrease button {
+  padding: 7px 15px 7px 15px;
+  border: none;
+  border-right: 0.1 px solid #cfcdcd;
+  font-size: 1.3rem;
+}
+.IncreaseDecrease button:hover {
+  background-color: #818dff;
+  color: white;
+}
+
+#increase {
+  position: absolute;
+  right: 0;
+}
+#Quantity {
+  margin-left: 0.7rem;
+}
+.ViewPro {
+  display: none;
+}
+.ViewPro-active {
+  display: block;
+  position: fixed;
+  top: 4rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+.AddCart button {
+  border: none;
+  border-radius: 15px;
+  background-color: #818dff;
+  color: white;
+  padding: 8px 18px 8px 18px;
+  transition: all 0.4s;
+  position: relative;
+  left: 30%;
+}
+.AddCart button:hover {
+  background-color: black;
+}
+.Social > i {
+  color: #525050;
+  padding: 5px;
+  font-size: 0.7rem;
+  position: relative;
+  left: 35%;
+}
+.darkness {
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  z-index: 3;
+}
+.darkness-active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+.stopscrolling {
+  height: 100%;
+  overflow: hidden;
+}
+.ExitBtn > i {
+  font-size: 2rem;
+  position: absolute;
+  right: 1.5rem;
+  top: -2.5rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.ExitBtn > i:hover {
+  color: gray;
+}
+.cart {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: white;
+  width: 25%;
+  height: 100vh;
+  z-index: 100;
+  transform: translateX(100%);
+  transition: transform 0.5s ease-in;
+}
+.cart-active {
+  transform: translateX(0);
+}
+.YourCart {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 2rem;
+}
+.YourCart > i {
+  font-size: 1.5rem;
+}
+.CartImage {
+  position: relative;
+  margin-left: 2rem;
+  margin-top: 2rem;
+}
+.CartImg {
+  width: 80px;
+  height: 100px;
+}
+.CartProduct {
+  position: absolute;
+  top: 0;
+  left: 8rem;
+}
+.CartProduct span {
+  font-size: 0.8rem;
+}
+.ViewCheckBtns a {
+  margin: 0.3rem;
+  color: white;
+  background-color: black;
+  border-radius: 24px;
+  padding: 7px 17px 7px 17px;
+}
+.ViewCheckBtns a:hover {
+  background-color: #818dff;
+  color: white;
+  text-decoration: none;
+}
+.BottomCart {
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+.cartQuantity {
+  color: #818dff;
+  font-size: 0.9rem;
+  position: relative;
+  top: -1rem;
+  font-weight: bold;
+}
+#exitCart {
+  transition: all 0.3s;
+}
+#exitCart:hover {
+  color: gray;
+  cursor: pointer;
+}
+.TotalPrice {
+  margin-left: 2rem;
+}
+.DeleteProduct {
+  transition: all 0.3s;
+}
+.DeleteProduct:hover {
+  cursor: pointer;
+  color: #dd0012;
+}
+footer {
+  background-color: #131313;
+  padding: 5rem 10rem 5rem 10rem;
+}
+.footerCol h6 {
+  color: white;
+}
+.footerCol ul {
+  list-style: none;
+}
+.footerCol ul li a {
+  font-size: 0.9rem;
+  color: #bebdbd;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.footerCol ul li p {
+  color: #bebdbd;
+  font-size: 0.9rem;
+}
+.socialmedia {
+  display: flex;
+}
+.socialmedia li a {
+  margin: 1rem;
+  transition: all 0.3s;
+}
+.socialmedia li a:hover {
+  color: #818dff;
+}
+.emailInput {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 0.9rem;
+}
+.footerCol ul li a:hover {
+  color: #818dff;
+}
+.SubBtn {
+  color: white;
+  background-color: #818dff;
+  padding: 11px 31px 11px 31px;
+  border: none;
+  border-radius: 24px;
+  margin: 1rem;
+}
+.firstRow {
+  padding-bottom: 4rem;
+}
+.cards {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cards li {
+  margin: 3px;
+}
+.CopyRight {
+  color: #bebdbd;
+  font-size: 0.9rem;
+  text-align: center;
+}
+@media screen and (max-width: 1024px) {
+  .nav-bar {
+    background-color: white;
+  }
+  .nav-links {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    flex-direction: column;
+    top: 3.5rem;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    pointer-events: none;
+    transition: 1s ease max-height, 1s ease background-color;
+    width: 100%;
+  }
+  .nav-link-active {
+    background-color: #818dff;
+    max-height: 300px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  .nav-links li a:hover {
+    color: black;
+  }
+  .nav-links li a::after {
+    display: none;
+  }
+  .top-bar {
+    display: none;
+  }
+  .logo h5 {
+    margin-left: 2rem;
+  }
+  .Burger {
+    position: absolute;
+    right: 10px;
+    display: block;
+    z-index: 101;
+  }
+}
+@media screen and (max-width: 768px) {
+  .ModelImg1 {
+    width: 100%;
+    right: 0%;
+    top: 20%;
+    left: 0%;
+    bottom: 20%;
+  }
+  .ModelImg2,
+  .ModelImg3 {
+    width: 100%;
+    right: 20%;
+    top: 20%;
+    left: 20%;
+    bottom: 20%;
+  }
+  .swiper-container {
+    width: 100%;
+    height: 400px;
+  }
+  .Collection .MWCollection {
+    font-size: 1rem;
+  }
+  .Collection .Season {
+    font-size: 1rem;
+  }
+  .SearchBox {
+    border: none;
+    margin-left: 1rem;
+    width: 85%;
+  }
+  .ProductTop {
+    width: 100%;
+  }
+  .ProductImage {
+    width: 100%;
+    height: 50%;
+  }
+  .FilterList {
+    display: block;
+    max-height: 0;
+  }
+  .FilterListShow {
+    max-height: 900px;
+  }
+  .slider {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  .image-holder {
+    margin-top: 3rem;
+    height: 35rem;
+    margin-left: 0rem;
+  }
+  .BulletsWrapper {
+    display: none;
+  }
+  .glide__arrows .one {
+    left: 0;
+  }
+  .glide__arrows .two {
+    right: 0;
+  }
+  .ExitBtn {
+    position: relative;
+    top: -100%;
+    right: -1rem;
+  }
+  .select-box .options-container {
+    top: 18rem;
+  }
+  .select-box2 .options-container2 {
+    top: 23rem;
+  }
+  .cart {
+    width: 60%;
+  }
+  .BottomCart {
+    margin-top: 0rem;
+    margin-left: 0rem;
+    font-size: 0.8rem;
+  }
+  .CartImage {
+    position: relative;
+    margin-left: 1rem;
+    margin-top: 0rem;
+    font-size: 1rem;
+  }
+  .CartProduct {
+    position: absolute;
+    top: 0;
+    left: 6rem;
+    font-size: 1rem;
+  }
+  footer {
+    background-color: #131313;
+    padding: 20px;
+  }
+  .footer ul {
+    margin-top: 1rem;
+  }
+  .TotalPrice {
+    margin-top: 2rem;
+    margin-left: 1rem;
+  }
+  .Hot::after {
+    top: -0.5rem;
+    left: 4rem;
+    width: 8%;
+  }
+}
