@@ -90,9 +90,24 @@ body {
   display: flex;
   list-style: none;
   margin-left: 3rem;
+  z-index:2;
 }
 .nav-links li {
   margin: 10px;
+}
+.ProductDesc i {
+  position:absolute;
+  right:.5rem;
+  transition:all 0.3s;
+}
+.ProductDesc i:hover{
+  color:#818dff;
+  cursor:pointer;
+}
+.activeHeart{
+  opacity:0;
+  pointer-events: none;
+  color:#818dff;
 }
 .Burger {
   display: none;
@@ -992,9 +1007,8 @@ footer {
     font-size: 1rem;
   }
   .CartProduct {
-    position: absolute;
     top: 0;
-    left: 6rem;
+    left: 7rem;
     font-size: 1rem;
   }
   footer {
@@ -1012,5 +1026,9 @@ footer {
     top: -0.5rem;
     left: 4rem;
     width: 8%;
+  }
+  .ProductDesc i {
+    right:1.5rem;
+    font-size:1.5rem;
   }
 }
