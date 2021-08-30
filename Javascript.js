@@ -232,26 +232,31 @@ function showSort() {
         defaultSort();
         displayItems(newArr);
         ImageHover();
+        changeHeart();
       }
       if (e.target.innerHTML === "Women") {
         WomenSort();
         displayItems(newArr);
         ImageHover();
+        changeHeart();
       }
       if (e.target.innerHTML === "Men") {
         MenSort();
         displayItems(newArr);
         ImageHover();
+        changeHeart();
       }
       if (e.target.innerHTML === "Watches") {
         WatchSort();
         displayItems(newArr);
         ImageHover();
+        changeHeart();
       }
       if (e.target.innerHTML === "Shoes") {
         ShoeSort();
         displayItems(newArr);
         ImageHover();
+        changeHeart();
       }
       if (e.target.innerHTML === "Bag") {
         BagSort();
